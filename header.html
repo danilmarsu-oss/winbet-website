@@ -1,0 +1,65 @@
+
+    <!-- INPUT STATE FOR MOBILE MENU -->
+    <input type="checkbox" id="nav-toggle">
+
+    <!-- BACKDROP (Click to close menu) -->
+    <label for="nav-toggle" class="nav-backdrop"></label>
+
+    <div class="app-container">
+        
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <a href="/">
+              <img src="/instantcasinologo.svg" alt="Instant Casino" class="logo-img"></a>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="/" class="nav-link active"><i class="fas fa-home"></i> Aula</a>
+                <a href="/app/" class="nav-link"><i class="fas fa-gamepad"></i> App <span class="badge">Hot</span></a>
+                <a href="/no-deposit-bonus/" class="nav-link"><i class="fas fa-video"></i> No Deposit Bonus</a>
+                <a href="/" class="nav-link"><i class="fas fa-futbol"></i> Vedonlyönti</a>
+                <a href="/" class="nav-link"><i class="fas fa-gift"></i> Kampanjat</a>
+                <a href="/" class="nav-link"><i class="fas fa-star"></i> VIP</a>
+                
+                <div style="margin-top: 2rem; padding-top:1rem; border-top: 1px solid var(--border-color);">
+                    <p style="padding: 0 1rem 0.5rem 1rem; font-size: 0.75rem; color:#666; text-transform: uppercase; font-weight:700;">Tuki</p>
+                    <a href="#" class="nav-link"><i class="fas fa-headset"></i> Asiakastuki</a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- MAIN WRAPPER -->
+        <main class="main-wrapper">
+            
+            <!-- HEADER (Unified) -->
+            <header class="top-header">
+                <!-- Mobile Only: Hamburger -->
+                <label for="nav-toggle" class="hamburger-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <!-- Mobile Only: Logo in Center -->
+                <div class="mobile-logo logo-text">
+                    <a href="/" >
+                   <img src="/instantcasinologo.svg" alt="Instant Casino" class="logo-img">
+                   </a>
+                </div>
+
+                <!-- Desktop Only: Mode Switcher -->
+                <div class="desktop-nav-items">
+                    <div class="mode-switch">
+                        <div class="mode-btn active">Kasino</div>
+                        <div class="mode-btn">Vedonlyönti</div>
+                    </div>
+                </div>
+
+                <!-- Shared: Actions -->
+                <div class="header-actions">
+                    <i class="fas fa-search" style="color:#fff; cursor:pointer; font-size:1.1rem; padding: 0.5rem;"></i>
+                    <a href="/login/">
+                    <button class="btn btn-ghost btn-sm">Kirjaudu</button></a>
+                    <a href="/go/">
+                    <button class="btn btn-primary btn-sm">Liity</button></a>
+                </div>
+            </header>

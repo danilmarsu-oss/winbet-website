@@ -1,0 +1,4 @@
+Redirect 301 /go/ https://sltna.pclira.com/?mid=352177_2029432
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
