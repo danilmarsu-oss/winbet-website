@@ -1,12 +1,12 @@
 :root {
-  --bg-main: #04060a;
-  --bg-header: #15171c;
-  --bg-footer: #15171c;
+  --bg-main: #636465;
+  --bg-header: #11182c;
+  --bg-footer: #11182c;
   --text-main: #eef1f7;
   --text-muted: #a5adbe;
   --line: #272c36;
-  --brand: #f0a031;
-  --brand-soft: #f4d39a;
+  --brand: #e42312;
+  --brand-soft: #ff6a5f;
   --surface: #10141b;
   --radius-lg: 22px;
   --radius-md: 14px;
@@ -136,14 +136,14 @@ a {
 }
 
 .btn-login {
-  background: #08090b;
+  background: #1d213c;
   border-color: #2f3440;
   color: #eef2fb;
 }
 
 .btn-signup {
-  background: #f0a031;
-  color: #111319;
+  background: #e42312;
+  color: #ffffff;
 }
 
 .hero {
@@ -195,25 +195,25 @@ h1 {
   border-radius: 999px;
   font-family: "Sora", "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  color: #121418;
-  background: linear-gradient(90deg, #f0a031 0%, #f5bb58 100%);
+  color: #ffffff;
+  background: linear-gradient(90deg, #e42312 0%, #ff503f 100%);
   text-decoration: none;
-  box-shadow: 0 0 0 rgba(240, 160, 49, 0.6);
+  box-shadow: 0 0 0 rgba(228, 35, 18, 0.6);
   animation: pulseGlow 2s infinite;
 }
 
 @keyframes pulseGlow {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(240, 160, 49, 0.45), 0 8px 18px rgba(240, 160, 49, 0.28);
+    box-shadow: 0 0 0 0 rgba(228, 35, 18, 0.45), 0 8px 18px rgba(228, 35, 18, 0.28);
   }
   70% {
     transform: scale(1.03);
-    box-shadow: 0 0 0 18px rgba(240, 160, 49, 0), 0 12px 28px rgba(240, 160, 49, 0.36);
+    box-shadow: 0 0 0 18px rgba(228, 35, 18, 0), 0 12px 28px rgba(228, 35, 18, 0.36);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(240, 160, 49, 0), 0 8px 18px rgba(240, 160, 49, 0.28);
+    box-shadow: 0 0 0 0 rgba(228, 35, 18, 0), 0 8px 18px rgba(228, 35, 18, 0.28);
   }
 }
 
@@ -470,6 +470,41 @@ h1 {
   color: #edf2fd;
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #1d213c;
+  color: #eef2fb;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+  transform: translateY(-1px);
+  border-color: #ff7f74;
+  outline: none;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
 .footer-links {
   display: grid;
   gap: 0.45rem;
@@ -650,7 +685,7 @@ h1 {
     display: inline-flex;
     justify-self: end;
     border: 1px solid #2f3541;
-    background: #08090b;
+    background: #1d213c;
     color: #eef2fb;
     border-radius: 999px;
     padding: 0.45rem 0.8rem;
